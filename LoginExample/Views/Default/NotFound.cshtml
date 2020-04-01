@@ -1,0 +1,22 @@
+﻿@model LoginExample.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NotFound</title>
+</head>
+<body>
+    <div> 
+        Der er ikke oprettet en bruger med brugernavn: @Model.UserName 
+    </div>
+    <div>
+        @Html.ActionLink("Tilbage til login siden...", "Index")
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿@model LoginExample.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login Page</title>
+</head>
+<body>
+    <div> 
+        <h2>Login</h2>
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(u => u.UserName)
+            <br />
+            @Html.EditorFor(u => u.UserName)
+            <button type="submit">Login</button>
+        }
+    </div>
+</body>
+</html>
